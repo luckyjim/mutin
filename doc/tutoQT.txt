@@ -1,0 +1,36 @@
+&
+############################## INSTALLATION ET UTILISATION QTCREATOR ##############################
+
+1) 	Rendez-vous sur le site : https://www.qt.io/download-open-source/ et téléchargez le logiciel
+	
+2)	Installez le sur votre machine à l'endroit désiré
+
+3)	Lancez QT, vous arrivez sur une interface vous proposant d'ouvrir ou de créer un projet, choisissez "Ouvrir"
+	Accedez au projet dans votre dépot, selectionnez le fichier avec l'extension .pro et validez
+
+	/!\ SI VOUS N'AVEZ PAS LE PROJET :
+		Dans un terminal, à l'endroit voulu : svn co svn+ssh://svn.in2p3.fr/APCelec
+
+	chemin du .pro de l'IHM CTA/GATE : 
+./APCelec/cta/gate/trunk/gui/vers1/Gate.pro
+
+	celui du simulateur:
+./APCelec/cta/gate/trunk/simu/vers1/Simulateur.pro
+
+	autre projet/prototype:
+./APCelec/cta/gate/trunk/gui/proto/MQtest/MQtest.pro
+./APCelec/cta/gate/trunk/gui/proto/TutoGame/TutoGame.pro
+./APCelec/cta/gate/trunk/gui/proto/test/test.pro
+./APCelec/cta/gate/trunk/simu/testSimu/testSimu.pro
+./APCelec/cta/gate/trunk/simu/proto/TestTimer/TestTimer.pro
+	
+4)  changer le chemin du build
+* cliquer sur l'icone projets colonne de gauche
+* Genera>>Re pertoire de compilation>>parcourir
+** choisir une emplacement sur votre machine
+
+
+
+5) 	Vous pouvez mettre à jour le dépot ou faire un commit des fichiers modifiés directement via QT.
+	Dans l'onglet "Outils" > "Subversion" > "Mettre à jour le dépot" pour effectuer une mise à jour.
+										  > "Faire un commit de tous les fichiers" pour faire un commit.

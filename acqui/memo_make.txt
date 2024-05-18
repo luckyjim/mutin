@@ -1,0 +1,2 @@
+cc -m32 -o loopt loopt.c /usr/local/lib/libpci.a /usr/lib/libz.so.1
+cc -o ttag ttag.c -lusb

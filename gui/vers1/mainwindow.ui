@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>998</width>
+    <height>591</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Gate</string>
+  </property>
+  <widget class="QWidget" name="centralWidget">
+   <layout class="QHBoxLayout" name="horizontalLayout">
+    <item>
+     <widget class="QSplitter" name="splitter">
+      <property name="sizePolicy">
+       <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+        <horstretch>100</horstretch>
+        <verstretch>100</verstretch>
+       </sizepolicy>
+      </property>
+      <property name="orientation">
+       <enum>Qt::Vertical</enum>
+      </property>
+      <property name="opaqueResize">
+       <bool>true</bool>
+      </property>
+      <property name="handleWidth">
+       <number>6</number>
+      </property>
+      <property name="childrenCollapsible">
+       <bool>false</bool>
+      </property>
+      <widget class="QGraphicsView" name="graphicsView">
+       <property name="frameShadow">
+        <enum>QFrame::Sunken</enum>
+       </property>
+      </widget>
+      <widget class="QTabWidget" name="tabWidget">
+       <property name="currentIndex">
+        <number>0</number>
+       </property>
+       <widget class="QWidget" name="tab">
+        <attribute name="title">
+         <string>Tableau</string>
+        </attribute>
+        <layout class="QVBoxLayout" name="verticalLayout">
+         <item>
+          <widget class="QTableWidget" name="tableWidget">
+           <attribute name="horizontalHeaderVisible">
+            <bool>true</bool>
+           </attribute>
+           <attribute name="horizontalHeaderCascadingSectionResizes">
+            <bool>false</bool>
+           </attribute>
+           <attribute name="horizontalHeaderDefaultSectionSize">
+            <number>160</number>
+           </attribute>
+           <attribute name="horizontalHeaderHighlightSections">
+            <bool>false</bool>
+           </attribute>
+           <attribute name="horizontalHeaderMinimumSectionSize">
+            <number>70</number>
+           </attribute>
+           <attribute name="horizontalHeaderShowSortIndicator" stdset="0">
+            <bool>false</bool>
+           </attribute>
+           <attribute name="horizontalHeaderStretchLastSection">
+            <bool>false</bool>
+           </attribute>
+           <attribute name="verticalHeaderVisible">
+            <bool>true</bool>
+           </attribute>
+           <attribute name="verticalHeaderHighlightSections">
+            <bool>false</bool>
+           </attribute>
+           <column>
+            <property name="text">
+             <string>N° Détecteur</string>
+            </property>
+           </column>
+           <column>
+            <property name="text">
+             <string>Participation [%]</string>
+            </property>
+           </column>
+           <column>
+            <property name="text">
+             <string>Taux de trigger [Hz]</string>
+            </property>
+           </column>
+           <column>
+            <property name="text">
+             <string>HT / Consigne [V]</string>
+            </property>
+           </column>
+           <column>
+            <property name="text">
+             <string>Correction horloge [ns]</string>
+            </property>
+           </column>
+           <column>
+            <property name="text">
+             <string>trigger PM 1 / PM 2 [mV]</string>
+            </property>
+           </column>
+          </widget>
+         </item>
+        </layout>
+       </widget>
+       <widget class="QWidget" name="tab_2">
+        <attribute name="title">
+         <string>Graphiques</string>
+        </attribute>
+        <layout class="QVBoxLayout" name="verticalLayout_2"/>
+       </widget>
+      </widget>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QMenuBar" name="menuBar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>998</width>
+     <height>22</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menuFichier">
+    <property name="title">
+     <string>Fichier</string>
+    </property>
+    <addaction name="actionEnregistrer"/>
+    <addaction name="actionCharger"/>
+    <addaction name="separator"/>
+    <addaction name="actionQuiter"/>
+   </widget>
+   <widget class="QMenu" name="menuAjouter_d_tecteur">
+    <property name="title">
+     <string>Réseau</string>
+    </property>
+    <widget class="QMenu" name="menuG_rer_le_r_seau">
+     <property name="title">
+      <string>Gérer le réseau</string>
+     </property>
+     <addaction name="actionModifier_r_seau"/>
+     <addaction name="actionInformations_r_seau_1"/>
+     <addaction name="actionInformation_r_seau_2"/>
+     <addaction name="actionEteindre"/>
+    </widget>
+    <addaction name="actionAjouter_d_tecteur"/>
+    <addaction name="menuG_rer_le_r_seau"/>
+   </widget>
+   <addaction name="menuFichier"/>
+   <addaction name="menuAjouter_d_tecteur"/>
+  </widget>
+  <widget class="QStatusBar" name="statusBar"/>
+  <action name="actionEnregistrer">
+   <property name="text">
+    <string>Enregistrer</string>
+   </property>
+  </action>
+  <action name="actionCharger">
+   <property name="text">
+    <string>Charger</string>
+   </property>
+  </action>
+  <action name="actionQuiter">
+   <property name="text">
+    <string>Quiter</string>
+   </property>
+  </action>
+  <action name="actionAjouter_d_tecteur">
+   <property name="text">
+    <string>Ajouter détecteur</string>
+   </property>
+  </action>
+  <action name="actionModifier_r_seau">
+   <property name="text">
+    <string>Modifier réseau</string>
+   </property>
+  </action>
+  <action name="actionInformations_r_seau_1">
+   <property name="text">
+    <string>Informations réseau 1</string>
+   </property>
+  </action>
+  <action name="actionInformation_r_seau_2">
+   <property name="text">
+    <string>Informations réseau 2</string>
+   </property>
+  </action>
+  <action name="actionEteindre">
+   <property name="text">
+    <string>Eteindre</string>
+   </property>
+  </action>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <resources/>
+ <connections/>
+</ui>

@@ -1,0 +1,20 @@
+Host svn.in2p3.fr
+    User courty
+    PasswordAuthentication no
+    IdentityFile /home/cta/.ssh/clef_courtyb_svn.in2p3.fr
+    IdentitiesOnly yes
+    RSAAuthentication yes
+    PubkeyAuthentication yes
+    Protocol 2
+    ForwardX11 no
+    ForwardAgent no
+Host svn.in2p3.fr
+    User colley
+    PasswordAuthentication no
+    IdentityFile /home/cta/.ssh/idKeyjmc
+    IdentitiesOnly yes
+    RSAAuthentication yes
+    PubkeyAuthentication yes
+    Protocol 2
+    ForwardX11 no
+    ForwardAgent no

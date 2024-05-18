@@ -1,0 +1,22 @@
+Install ation LUBUNTU  National Instrument
+* 1 GB RAM
+* processor Intel Duo CPU T9400 @ 2.5GHz
+
+
+Installation compilator
+===================
+sudo apt-get install g++
+ sudo  apt-get install gcc
+ sudo apt-get install make
+
+installation SVN
+==============
+sudo apt-get install subversion
+
+ 
+=> tutoQT.txt
+
+
+pb link can't find -lGL, solve by
+=========================
+sudo apt-get install build-essential libgl1-mesa-dev
